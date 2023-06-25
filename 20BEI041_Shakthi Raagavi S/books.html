@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="s.css">
+    <title> Accomodation</title>
+    <style>
+        * {
+            margin: 1px;
+        }
+        table,tr,td{
+                border-collapse: collapse;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+    </style>
+</head>
+<script>
+    var imgArr=["vtour.png","extra.jpg"];
+    function display(){
+        var num = Math.floor(Math.random()*(imgArr.length));
+        document.image.src=imgArr[num];
+    }
+</script>
+<body onload="display()" style="background-color: rgb(242, 226, 212)">
+    <div class="header">
+        <a href="HOME.html" class="logo"><img src="logo.png" height="50" alt="logo"></a>
+        <div class="header-right">
+            <a href="HOME.html">Home</a>
+            <a href="books.html">Books</a>
+            <a href="Student_login.html">Student_Login</a>
+            <a href="Admin_Login.html">Admin_Login</a>
+            <a href="Contact Us.html">Contact Us</a>
+        </div>
+    </div>
+    <img name="image" src="a2.jpg" width="100%" height="500px"><br><br>
+    <div class=c><h3 style="color:rgb(46, 26, 1)">Most borrowed Books</h3>
+        <ul style="background-color: transparent;text-align: justify;">
+            <li style="font-size: 18px;">-Biography/Memoir</li><br>
+            <li style="font-size: 18px;">-Fiction / Fantasy</li><br>
+            <li style="font-size: 18px;">-Non-Fiction</li><br>
+            <li style="font-size: 18px;">-Subject/Course Books </li><br>
+            <li style="font-size: 18px;">-Mystery/Thriller</li><br>
+        </ul><br>
+            <footer>
+                <p><b>Library Management System</b>
+                  <br>Terms & Conditions | Booking & Cancellation Policy | Privacy Policy | Contact Us<br>Developed by Shakthi</p>
+              </footer>
+</body>
+</html>

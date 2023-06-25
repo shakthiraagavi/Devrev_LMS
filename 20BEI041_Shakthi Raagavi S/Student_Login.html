@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="index.css">
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+    
+    label {
+      padding: 12px 12px 12px 0;
+      display: inline-block;
+    }
+    
+    input[type=submit] {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    
+    .col-25 {
+      float: left;
+      width: 25%;
+      margin-top: 6px;
+    }
+    
+    .col-75 {
+      float: left;
+      width: 75%;
+      margin-top: 6px;
+    }
+    
+    /* Clear floats after the columns */
+    .row1::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
+    }
+    </style>
+</head>
+<body style="background-color: rgb(242, 226, 212)">
+  <div class="header">
+    <a href="home.html" class="logo"><img src="logo.png" height="50" alt="logo"></a>
+    <div class="header-right">
+      <a href="home.html">Home</a>
+      <a href="books.html">Books</a>
+      <a href="Student_Login.html">Student_Login</a>
+      <a href="Admin_Login.html">Admin_Login</a>
+      <a class="active" href="contact us.html">Contact Us</a>
+      <a href="https://twitter.com"  title="Twitter"><img src="twitter.png" width="30" height="30"></a>
+      <a href="https://instagram.com" title="Instagram"><img src="insta.jpeg" width="30" height="30"></a>
+    </div>
+  </div>
+  <h2>Student_Login</h2>
+<div class="container">
+  <form action="/action_page.php">
+    <fieldset>
+      <legend>Personal Details</legend>
+  <div class="row1">
+    <div class="col-25">
+      <label for="fname">Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="Name" placeholder="Name..." autocomplete="on">
+    </div>
+  </div>
+  <div class="row1">
+    <div class="col-25">
+      <label for="lname">Address</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="address" placeholder="Address..." autocomplete="on">
+    </div>
+  </div>
+  <div class="row1">
+    <div class="col-25">
+      <label for="lname">Contact Number</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="contact" placeholder="Contact Number..." autocomplete="on">
+    </div>
+  </div>
+  <div class="row1">
+    <div class="col-25">
+      <label for="lname">Email</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="email" placeholder="Email..." autocomplete="on">
+    </div>
+  </div>
+    </fieldset>
+  <div class="row1">
+    <div class="col-25">
+      <label for="contact-type">Preferred contact method:</label>
+    </div>
+    <div class="col-75">
+      <input type="radio" id="contact-email" name="contact-type" value="email" checked>
+      <label for="contact-email">Email</label>
+      <input type="radio" id="contact-phone" name="contact-type" value="phone">
+      <label for="contact-phone">Phone</label>
+    </div>
+  </div>
+  <div class="row1">
+    <div class="col-25">
+      <label for="subscribe">Subscribe to newsletter:</label>
+    </div>
+    <div class="col-75">
+      <input type="checkbox" id="subscribe" name="subscribe" value="1">
+      <label for="vehicle1">Subscribe to our newsletter</label>
+    </div>
+  </div>
+  <br>
+  <div class="row1">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+</div>
+</body>
+</html>

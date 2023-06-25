@@ -1,0 +1,96 @@
+/*home sheet*/
+.header {
+    overflow: hidden;
+    background-color: rgb(240, 212, 141);
+  }
+  
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    margin-top: 15px;
+    font-style: bold;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+    margin-top: 0px;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: rgb(185, 248, 107);
+    color: black;
+  }
+  
+  /* Style the active/current link*/
+  .active {
+    background-color: sandybrown;
+    color: #eeeded;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
+
+  
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
+.heading{
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    background: rgba(253, 157, 205, 0.05);
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #38444d;
+  }
+  
+  li {
+    float: left;
+    font-size: larger;
+  }
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: burlywood;
+  }
+.c{
+  padding-left: 150px;
+  padding-right: 150px;
+}
+footer {
+  position: scroll;
+  text-align: center;
+  padding: 3px;
+  background-color: #eeeded;
+  bottom: 0;
+}
